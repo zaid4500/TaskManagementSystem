@@ -1,0 +1,15 @@
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\bin\Debug\net8.0\ManagementBE.Kernel.Core.deps.json
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\bin\Debug\net8.0\ManagementBE.Kernel.Core.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\bin\Debug\net8.0\ManagementBE.Kernel.Core.pdb
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\bin\Debug\net8.0\ManagementBE.Kernel.Domain.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\bin\Debug\net8.0\ManagementBE.Kernel.Domain.pdb
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.csproj.AssemblyReference.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.AssemblyInfoInputs.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.AssemblyInfo.cs
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.csproj.CoreCompileInputs.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\Manageme.57236165.Up2Date
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\refint\ManagementBE.Kernel.Core.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ManagementBE.Kernel.Core.pdb
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Core\obj\Debug\net8.0\ref\ManagementBE.Kernel.Core.dll

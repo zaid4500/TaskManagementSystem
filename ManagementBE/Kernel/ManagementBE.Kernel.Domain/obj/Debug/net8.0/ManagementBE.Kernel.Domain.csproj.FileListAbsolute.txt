@@ -1,0 +1,12 @@
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\bin\Debug\net8.0\ManagementBE.Kernel.Domain.deps.json
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\bin\Debug\net8.0\ManagementBE.Kernel.Domain.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\bin\Debug\net8.0\ManagementBE.Kernel.Domain.pdb
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.csproj.AssemblyReference.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.AssemblyInfoInputs.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.AssemblyInfo.cs
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.csproj.CoreCompileInputs.cache
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\refint\ManagementBE.Kernel.Domain.dll
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ManagementBE.Kernel.Domain.pdb
+D:\code\Assesstment\ManagementBE\Kernel\ManagementBE.Kernel.Domain\obj\Debug\net8.0\ref\ManagementBE.Kernel.Domain.dll

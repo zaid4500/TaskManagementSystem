@@ -1,0 +1,30 @@
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+mat-dialog-content {
+  min-width: 350px;
+  padding: 1rem 1.5rem;
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+mat-dialog-actions {
+  padding: 1rem 1.5rem;
+
+  button {
+    margin-left: 0.5rem;
+  }
+}

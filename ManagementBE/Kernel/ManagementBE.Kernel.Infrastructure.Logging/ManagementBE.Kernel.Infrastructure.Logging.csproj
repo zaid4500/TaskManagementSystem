@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="UAParser" Version="3.1.47" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ManagementBE.Kernel.Core\ManagementBE.Kernel.Core.csproj" />
+		<ProjectReference Include="..\ManagementBE.Kernel.Domain\ManagementBE.Kernel.Domain.csproj" />
+		<ProjectReference Include="..\ManagementBE.Kernel.Infrastructure.Persistence\ManagementBE.Kernel.Infrastructure.Persistence.csproj" />
+	</ItemGroup>
+	
+
+</Project>

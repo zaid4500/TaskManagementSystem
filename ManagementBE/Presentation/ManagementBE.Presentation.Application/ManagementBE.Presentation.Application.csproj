@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Validators\Services\**" />
+    <EmbeddedResource Remove="Validators\Services\**" />
+    <None Remove="Validators\Services\**" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
+		<PackageReference Include="EfCore.SchemaCompare" Version="6.0.0" />
+		<PackageReference Include="EPPlus" Version="7.0.10" />
+		<PackageReference Include="MailKit" Version="3.1.1" />
+		<PackageReference Include="MimeKit" Version="3.1.1" />
+		<PackageReference Include="ReportViewerCore.NETCore" Version="15.1.19" />
+		<PackageReference Include="System.DirectoryServices" Version="6.0.0" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kernel\ManagementBE.Kernel.Core\ManagementBE.Kernel.Core.csproj" />
+    <ProjectReference Include="..\..\Kernel\ManagementBE.Kernel.Infrastructure.Persistence\ManagementBE.Kernel.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

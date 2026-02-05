@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ManagementBE.Presentation.API.props" />
+</Project>

@@ -1,0 +1,151 @@
+<div class="dialog-container">
+  <div class="dialog-header">
+    <h2>{{ title }}</h2>
+    <button mat-icon-button (click)="onCancel()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="dialog-content">
+      <!-- Email -->
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email Address</mat-label>
+          <input matInput type="email" formControlName="email" />
+          <mat-icon matPrefix>email</mat-icon>
+          <mat-error *ngIf="f['email'].hasError('required')">Email is required</mat-error>
+          <mat-error *ngIf="f['email'].hasError('email')">Please enter a valid email</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Password fields (only in create mode) -->
+      <div class="form-row" *ngIf="isCreateMode">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [type]="hidePassword ? 'password' : 'text'"
+            formControlName="password"
+          />
+          <mat-icon matPrefix>lock</mat-icon>
+          <button
+            mat-icon-button
+            matSuffix
+            type="button"
+            (click)="hidePassword = !hidePassword"
+          >
+            <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+          <mat-error *ngIf="f['password'].hasError('required')">Password is required</mat-error>
+          <mat-error *ngIf="f['password'].hasError('minlength')">Password must be at least 6 characters</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Confirm Password</mat-label>
+          <input
+            matInput
+            [type]="hideConfirmPassword ? 'password' : 'text'"
+            formControlName="confirmPassword"
+          />
+          <mat-icon matPrefix>lock</mat-icon>
+          <button
+            mat-icon-button
+            matSuffix
+            type="button"
+            (click)="hideConfirmPassword = !hideConfirmPassword"
+          >
+            <mat-icon>{{ hideConfirmPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+          <mat-error *ngIf="f['confirmPassword'].hasError('required')">Confirm password is required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- English Names -->
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>First Name (English)</mat-label>
+          <input matInput formControlName="firstNameEn" />
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error *ngIf="f['firstNameEn'].hasError('required')">First name is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Last Name (English)</mat-label>
+          <input matInput formControlName="lastNameEn" />
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error *ngIf="f['lastNameEn'].hasError('required')">Last name is required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Arabic Names -->
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>الاسم الأول (عربي)</mat-label>
+          <input matInput formControlName="firstNameAr" dir="rtl" />
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error *ngIf="f['firstNameAr'].hasError('required')">الاسم الأول مطلوب</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>اسم العائلة (عربي)</mat-label>
+          <input matInput formControlName="lastNameAr" dir="rtl" />
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-error *ngIf="f['lastNameAr'].hasError('required')">اسم العائلة مطلوب</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Phone and Gender -->
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="phoneNumber" />
+          <mat-icon matPrefix>phone</mat-icon>
+          <mat-error *ngIf="f['phoneNumber'].hasError('required')">Phone number is required</mat-error>
+          <mat-error *ngIf="f['phoneNumber'].hasError('pattern')">Please enter a valid phone number</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="genderId">
+            <mat-option *ngFor="let gender of genders" [value]="gender.id">
+              {{ gender.nameEn }}
+            </mat-option>
+          </mat-select>
+          <mat-icon matPrefix>wc</mat-icon>
+          <mat-error *ngIf="f['genderId'].hasError('required')">Gender is required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Roles</mat-label>
+          <mat-select formControlName="role">
+            <mat-option *ngFor="let role of availableRoles" [value]="role.name">
+              {{ role.name }}
+            </mat-option>
+          </mat-select>
+          <mat-icon matPrefix>admin_panel_settings</mat-icon>
+          <mat-error *ngIf="f['role'].hasError('required')">At least one role is required</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="dialog-actions">
+      <button mat-button type="button" (click)="onCancel()" [disabled]="loading">
+        Cancel
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        [disabled]="loading || isViewMode"
+        *ngIf="!isViewMode"
+      >
+        <mat-spinner diameter="20" *ngIf="loading" class="button-spinner"></mat-spinner>
+        <span *ngIf="!loading">{{ isCreateMode ? 'Create' : 'Update' }}</span>
+        <span *ngIf="loading">{{ isCreateMode ? 'Creating...' : 'Updating...' }}</span>
+      </button>
+    </div>
+  </form>
+</div>

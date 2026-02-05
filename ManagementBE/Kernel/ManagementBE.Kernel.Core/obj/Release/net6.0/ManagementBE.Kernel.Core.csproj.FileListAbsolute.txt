@@ -1,0 +1,16 @@
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\bin\Release\net6.0\EGOV.Kernel.Core.deps.json
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\bin\Release\net6.0\EGOV.Kernel.Core.dll
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\bin\Release\net6.0\EGOV.Kernel.Core.pdb
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\bin\Release\net6.0\EGOV.Kernel.Domain.dll
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\bin\Release\net6.0\EGOV.Kernel.Domain.pdb
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.csproj.AssemblyReference.cache
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.AssemblyInfoInputs.cache
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.AssemblyInfo.cs
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.csproj.CoreCompileInputs.cache
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.sourcelink.json
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Ker.D51B746B.Up2Date
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.dll
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\refint\EGOV.Kernel.Core.dll
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\EGOV.Kernel.Core.pdb
+C:\Users\netel\source\repos\EGoveServices\Backend\Kernel\EGOV.Kernel.Core\obj\Release\net6.0\ref\EGOV.Kernel.Core.dll

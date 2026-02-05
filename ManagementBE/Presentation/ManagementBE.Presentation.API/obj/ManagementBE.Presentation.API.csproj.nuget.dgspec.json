@@ -1,0 +1,739 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.API\\ManagementBE.Presentation.API.csproj": {}
+  },
+  "projects": {
+    "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj",
+        "projectName": "ManagementBE.Kernel.Core",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.1.0, )"
+            },
+            "Elastic.Apm.NetCoreAll": {
+              "target": "Package",
+              "version": "[1.16.1, )"
+            },
+            "Elastic.Apm.SerilogEnricher": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj",
+        "projectName": "ManagementBE.Kernel.Domain",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\ManagementBE.Kernel.Host.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\ManagementBE.Kernel.Host.Base.csproj",
+        "projectName": "ManagementBE.Kernel.Host.Base",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\ManagementBE.Kernel.Host.Base.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\ManagementBE.Kernel.Infrastructure.Logging.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\ManagementBE.Kernel.Infrastructure.Logging.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.20.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\ManagementBE.Kernel.Infrastructure.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\ManagementBE.Kernel.Infrastructure.Logging.csproj",
+        "projectName": "ManagementBE.Kernel.Infrastructure.Logging",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\ManagementBE.Kernel.Infrastructure.Logging.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "UAParser": {
+              "target": "Package",
+              "version": "[3.1.47, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj",
+        "projectName": "ManagementBE.Kernel.Infrastructure.Persistence",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Domain\\ManagementBE.Kernel.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "UAParser": {
+              "target": "Package",
+              "version": "[3.1.47, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.5, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.API\\ManagementBE.Presentation.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.API\\ManagementBE.Presentation.API.csproj",
+        "projectName": "ManagementBE.Presentation.API",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.API\\ManagementBE.Presentation.API.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\ManagementBE.Kernel.Host.Base.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Host.Base\\ManagementBE.Kernel.Host.Base.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "JsonModelBinder": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NSwag.Core": {
+              "target": "Package",
+              "version": "[13.20.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj",
+        "projectName": "ManagementBE.Presentation.Application",
+        "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\ManagementBE.Presentation.Application.csproj",
+        "packagesPath": "C:\\Users\\netel\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\Assesstment\\ManagementBE\\Presentation\\ManagementBE.Presentation.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\netel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Core\\ManagementBE.Kernel.Core.csproj"
+              },
+              "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj": {
+                "projectPath": "D:\\code\\Assesstment\\ManagementBE\\Kernel\\ManagementBE.Kernel.Infrastructure.Persistence\\ManagementBE.Kernel.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "EfCore.SchemaCompare": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "ReportViewerCore.NETCore": {
+              "target": "Package",
+              "version": "[15.1.19, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

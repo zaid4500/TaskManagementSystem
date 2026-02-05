@@ -1,0 +1,163 @@
+{
+  "ConnectionStrings": {
+    "Default": "Server=tcp:modee.database.windows.net,1433;Initial Catalog=MOC;Persist Security Info=False;User ID=modee;Password=Aa_123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    //"Default": "Server=tcp:modee.database.windows.net,1433;Initial Catalog=moc;Persist Security Info=False;User ID=modee;Password=Aa_123456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    //"Default": "Server=10.0.54.85,1433;Initial Catalog=MOCD-STG-DB;Persist Security Info=False;User ID=MOCD-STG-USR;Password=P@ss4culture2024;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+
+  ////"BaseURL": "http://10.0.85.147",
+  //"BaseURL": "https://modee-moc.azurewebsites.net",
+  //"WFBaseURL": "https://modee-moc.azurewebsites.net",
+  "BaseURL": "https://moc-be-testing.azurewebsites.net",
+  "WFBaseURL": "https://moc-be-testing.azurewebsites.net",
+  //"BaseURL": "https://localhost:44339",
+  //"WFBaseURL": "https://localhost:44339",
+  "FrontEndURL": "https://moc-modee.azurewebsites.net",
+
+  //"BaseURL": "http://193.188.74.241",
+  //"WFBaseURL": "http://10.0.85.147",
+  //"FrontEndURL": "http://193.188.74.241",
+
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Information",
+        "System": "Warning",
+        "Elastic": "Fatal"
+      }
+    }
+  },
+
+  "FileUploadAcceptTypes": ".jpg, .jpeg, .bmp, .png, .gif, .tif, .tiff, .pdf", //"application/pdf",
+
+  //RequestResponseLogger 
+  "RequestResponseLogger": {
+    "Enabled": true,
+    "Name": "ManagementBE",
+    "DateTimeFormat": "yyyy-MM-dd HH:mm:ss"
+  },
+
+
+  //SMTP
+  "SMTP": {
+    "Host": "relay.webmail.gov.jo",
+    "Port": 25,
+    "UseDefaultCredentials": false,
+    "EnableSsl": true,
+    "SenderUserName": "CarcServise@carc.gov.jo",
+    "SenderPassword": "",
+    "SkipCredentials": false,
+    "Enabled": false,
+    "EmailFrom": "CarcServise@carc.gov.jo"
+  },
+
+  "SMS": {
+    "IsEnabled": true,
+    "MobileNumber": "", //962787911022-Khalid Mobile Number
+    "TokenURL": "https://bulksms.arabiacell.net/authenticate",
+    "Username": "culture-api", // TODO : Return the SMS for MOC service provider 
+    "Password": "ssSS12345678@@", // TODO : Return the SMS for MOC service provider 
+    "SendNotification": "https://bulksms.arabiacell.net/sendSmsNotifications"
+  },
+
+  //Security Settings
+  "SecuritySettings": {
+    "Provider": "Jwt",
+    "RequireConfirmedAccount": false,
+    "JwtSettings": {
+      "key": "S0M3RAN0MS3CR3T!1!MAG1C!1!",
+      "tokenExpirationInMinutes": 60,
+      "refreshTokenExpirationInDays": 7
+    }
+  },
+
+
+  //SwaggerSettings
+  "SwaggerSettings": {
+    "Enable": true,
+    "Title": "E-Government Services",
+    "Version": "1.0.0",
+    "Description": "",
+    "ContactName": "Khalid Salameh",
+    "ContactEmail": "Khalid.salameh92@gmail.com",
+    "ContactUrl": "",
+    "License": true,
+    "LicenseName": "MIT License",
+    "LicenseUrl": "https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/main/LICENSE",
+    "AuthorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+    "TokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+    "ApiScope": "api://<Your ClientId of the AzureAd Server App Registration>/access_as_user",
+    "OpenIdClientId": "<Your ClientId of the AzureAd Client App Registration>"
+  },
+
+
+  //QRSettings
+  "QRSettings": {
+    "QRAuthorization": {
+      "URL": "https://be.qr.gov.jo/users/login",
+      "Email": "Sahar.Abusammour@CARC.GOV.JO",
+      "Password": "ASDa5675%^&$"
+    },
+    // الشهادات والوثائق
+    "Service_AuthenticationCertificatesDocuments": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // شهادة التحقق من خلو حوادث الطيران
+    "Service_CheckNumberOfAviationAccidents": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // إصدار أو تجديد الأفراد العاملين في المطار
+    "Service_AviationSecurityOfficerLicenseIssuanceRenewal": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // إصدار أو تجديد بطاقة عضوية طاقم الطائرة
+    "Service_CrewMemberCertificateIssuanceRenewal": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // اصدار رخصة طيار خاص
+    "Service_PPLLicenseIssue": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // إصدار رخصة طالب طيار
+    "Service_IssuingStudentPilotCard": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // اصدار رخصة طيار تجاري
+    "Service_CPLLicenseIssue": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c",
+    // إصدار شهادة التحقق من الرخص الصادرة من الأردن
+    "Service_LicenseAuthenticationConfirmation": "https://be.qr.gov.jo/qr/build/39704bf6-1bad-478f-a085-b40754d2eb3c"
+  },
+
+
+  //CacheSettings
+  "CacheSettings": {
+    "UseDistributedCache": false,
+    "PreferRedis": false,
+    "RedisURL": "localhost:6379"
+  },
+
+  //CacheSettings
+  "RecaptchaSettings": {
+    "Enabled": false,
+    "ServerKey": "6LcqA1MpAAAAAFUy2kJvQ0igidjFrQrnaRb6AJLu"
+  },
+
+  // Identity Settings
+  "IdentitySettings": {
+    "LockoutDurationInMinutes": "10",
+    "MaxFailedAccessAttempts": "3"
+  },
+
+  //"Test_SMTP": {
+  //  "Host": "mail.waqtak.io",
+  //  "EmailFrom": "moc@waqtak.io",
+  //  "SenderUserName": "moc@waqtak.io",
+  //  "SenderPassword": "AY^zfJ.qpGes",
+  //  "Port": 465,
+  //  "UseDefaultCredentials": true,
+  //  "EnableSsl": true,
+  //  "SkipCredentials": false,
+  //  "Enabled": true
+  //}
+  "Test_SMTP": {
+    "Host": "smtp.gmail.com",
+    "EmailFrom": "octopiantest@gmail.com",
+    "SenderUserName": "octopiantest@gmail.com",
+    "SenderPassword": "bgqe jmua gyly kkfc",
+    "Port": 587,
+    "UseDefaultCredentials": false,
+    "EnableSsl": true,
+    "SkipCredentials": false,
+    "Enabled": true
+  }
+
+}

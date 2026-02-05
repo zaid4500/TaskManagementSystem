@@ -1,0 +1,43 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Use Material's built-in palettes
+$my-primary: mat.m2-define-palette(mat.$m2-amber-palette, 500);
+$my-accent: mat.m2-define-palette(mat.$m2-gray-palette, 900);
+$my-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+$my-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  )
+));
+
+@include mat.all-component-themes($my-theme);
+
+// Override the primary color to your custom yellow
+:root {
+  --mdc-theme-primary: #FFB81C;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #F5F5F5;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #FFB81C !important;
+  --mdc-protected-button-label-text-color: #1A1A1A !important;
+}
+
+.mat-primary {
+  --mat-option-selected-state-label-text-color: #FFB81C;
+  --mat-minimal-pseudo-checkbox-selected-checkmark-color: #FFB81C;
+}

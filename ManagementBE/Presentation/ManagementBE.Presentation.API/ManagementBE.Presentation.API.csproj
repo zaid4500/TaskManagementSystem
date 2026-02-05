@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Files\**" />
+    <Content Remove="Files\**" />
+    <EmbeddedResource Remove="Files\**" />
+    <None Remove="Files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="JsonModelBinder" Version="2.1.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+	  <PackageReference Include="NSwag.Core" Version="13.20.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kernel\ManagementBE.Kernel.Core\ManagementBE.Kernel.Core.csproj" />
+    <ProjectReference Include="..\..\Kernel\ManagementBE.Kernel.Host.Base\ManagementBE.Kernel.Host.Base.csproj" />
+    <ProjectReference Include="..\ManagementBE.Presentation.Application\ManagementBE.Presentation.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reports\Branch2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Certificate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
