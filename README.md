@@ -24,3 +24,19 @@ Frontend run steps:
 1) Open the Frontend code folder in Visual Studio Code; you'll find it in the folder "ManagmentUI"
 2) Open the terminal and install npm (run this command "npm install" or run this command if any error returned "npm install --force")
 3) When the npm is installed successfully, run the project (run this command "ng serve" or run this command if you're using a local version of node.js"npm start")
+
+
+
+------------------------------------------------------------------------------------
+You must start by creating a new task/s using the admin account.
+Then you can try login to a user account to view the assigned tasks. 
+
+Admin account:
+Username: admin@gmail.com
+Password: Admin@123456
+
+User accounts:
+Username: user1@gmail.com
+Username: user2@gmail.com
+Username: user3@gmail.com
+Password: User@123456 (this password is valid for all user accounts)
