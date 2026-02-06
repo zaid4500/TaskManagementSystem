@@ -28,7 +28,7 @@ Frontend run steps:
 
 
 ------------------------------------------------------------------------------------
-You must start by creating a new task/s using the admin account.
+You must start by creating a new users/tasks using the admin account.
 Then you can try login to a user account to view the assigned tasks. 
 
 Admin account:
